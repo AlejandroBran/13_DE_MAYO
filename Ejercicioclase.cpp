@@ -2,7 +2,9 @@
 
 using namespace std;
 
-int main (){
+int main() {
+    
+    
 
     float valor1, valor2, resultado;
     char operadores;
@@ -16,41 +18,50 @@ int main (){
     cout << "Ingrese un operador (+,-,*,/): \n";
     cin >> operadores;
 
-    switch (operadores){
+    switch (operadores) {
 
-        case "+":
-        resultado = valor1 + valor2;
-        cout << "El resultado de la suma es: \n"<< resultado<< "\n";
-        break;
+        case '+':
+            resultado = valor1 + valor2;
+            cout << "El resultado de la suma es: \n" << resultado << "\n";
+            break;
 
-        case "-":
-        resultado = valor1 - valor2;
-        cout << "El resultado de la resta es: \n" << resultado <<"\n";
-        break;
+        case '-':
+            resultado = valor1 - valor2;
+            cout << "El resultado de la resta es: \n" << resultado << "\n";
+            break;
 
-        case "*":
-        resultado = valor1 * valor2;
-        cout << "El resultado de la multiplicación es: \n"<< resultado << "\n";
-        break;
+        case '*':
+            resultado = valor1 * valor2;
+            cout << "El resultado de la multiplicación es: \n" << resultado << "\n";
+            break;
 
-        case "/":
-        if (valor2 !=0){
-            resultado = valor1 / valor2;
-            cout << "El resultado de la división es: \n"<< resultado << "\n";
-            
-        }else {
-            cout << "Error: No se puede dividir entre cero. \n";
-
-    
-        }
-        break;
-
-        default: 
-        cout << "Operador no valido.\n";
-        break;
-        
+        case '/':
+            if (valor2 != 0) {
+                resultado = valor1 / valor2;
+                cout << "El resultado de la división es: \n" << resultado << "\n";
+            } else {
+                cout << "Error: No se puede dividir entre cero. \n";
             }
-       return 0;
+            break;
+
+        default:
+            cout << "Operador no valido.\n";
+            break;
     }
+    
+    
+    
+
+   
+    if (operadores % 2 == 0) {
+        cout << "El número " << operadores << " es par." << "\n";
+    } else {
+        cout << "El número " << operadores << " es impar." << "\n";
+    }
+
+
+    return 0;
+}
+
 
    
