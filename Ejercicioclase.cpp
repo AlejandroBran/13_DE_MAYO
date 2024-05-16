@@ -6,8 +6,9 @@ int main() {
     
     
 
-    float valor1, valor2, resultado;
-    char operadores;
+    int valor1, valor2, resultado;
+    char resultadofinal;
+    
 
     cout << "Ingrese el primer valor: \n";
     cin >> valor1;
@@ -15,10 +16,10 @@ int main() {
     cout << "Ingrese el segundo valor: \n";
     cin >> valor2;
 
-    cout << "Ingrese un operador (+,-,*,/): \n";
-    cin >> operadores;
+    cout << "Eliga una operación (+, -, *, /). \n";
+    cin >> resultadofinal;
 
-    switch (operadores) {
+    switch (resultadofinal) {
 
         case '+':
             resultado = valor1 + valor2;
@@ -53,15 +54,12 @@ int main() {
     
 
    
-    if (operadores % 2 == 0) {
-        cout << "El número " << operadores << " es par." << "\n";
+    if (resultado % 2 == 0) {
+        cout << "El número " << resultado << " es par." << "\n";
     } else {
-        cout << "El número " << operadores << " es impar." << "\n";
+        cout << "El número " << resultado << " es impar." << "\n";
     }
 
 
     return 0;
 }
-
-
-   
